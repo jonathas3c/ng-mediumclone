@@ -6,15 +6,16 @@
         <p class="text-xs-center">
           <a [routerLink]="['/login']">Have an account?</a>
         </p>
-        <!-- ! Space for treating backend errors -->
+        <!-- Space for treating backend errors -->
 
-        <form action="">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
           <fieldset>
             <fieldset class="form-group">
               <input
                 type="text"
                 class="form-control form-control-lg"
                 placeholder="Username"
+                formControlName="username"
               />
             </fieldset>
 
@@ -23,6 +24,7 @@
                 type="email"
                 class="form-control form-control-lg"
                 placeholder="E-mail"
+                formControlName="email"
               />
             </fieldset>
 
@@ -31,6 +33,7 @@
                 type="password"
                 class="form-control form-control-lg"
                 placeholder="Password"
+                formControlName="password"
               />
             </fieldset>
             <button class="btn btn-lg btn-primary pull-xs-right" type="submit">
