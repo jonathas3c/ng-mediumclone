@@ -4,6 +4,7 @@ import { select, Store } from '@ngrx/store'
 import { Observable } from 'rxjs'
 
 import { registerAction } from 'src/app/auth/store/actions'
+import { CurrentUserInterface } from 'src/app/shared/types/currentUser.interface'
 import { isSubmittingSelector } from '../../store/selectors'
 
 @Component({

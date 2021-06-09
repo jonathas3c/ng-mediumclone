@@ -12,6 +12,7 @@ import { environment } from 'src/environments/environment'
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+
     AppRoutingModule,
     AuthModule,
     StoreModule.forRoot({}),
